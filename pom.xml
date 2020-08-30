@@ -6,14 +6,10 @@
         <artifactId>file-generator</artifactId>
         <version>0.0.1-SNAPSHOT</version>
 
-        <parent>
-                <groupId>com.cooldatasoft</groupId>
-                <artifactId>spring-boot-starter-parent</artifactId>
-                <version>2.3.0.1.RELEASE</version>
-        </parent>
-
         <properties>
                 <java.version>1.8</java.version>
+                <lombok.version>1.18.12</lombok.version>
+                <spring-boot.version>2.3.0.RELEASE</spring-boot.version>
         </properties>
 
         <build>
@@ -40,6 +36,7 @@
                 <dependency>
                         <groupId>org.springframework.boot</groupId>
                         <artifactId>spring-boot-starter-web</artifactId>
+                        <version>${spring-boot.version}</version>
                 </dependency>
                 <dependency>
                         <groupId>net.sf.opencsv</groupId>
@@ -51,19 +48,20 @@
                 <dependency>
                         <groupId>org.projectlombok</groupId>
                         <artifactId>lombok</artifactId>
-                        <scope>provided</scope>
+                        <version>${lombok.version}</version>
                 </dependency>
 
                 <!-- Gson: Java to Json conversion -->
                 <dependency>
                         <groupId>com.google.code.gson</groupId>
                         <artifactId>gson</artifactId>
-                        <scope>compile</scope>
+                        <version>2.8.6</version>
                 </dependency>
 
                 <dependency>
                         <groupId>junit</groupId>
                         <artifactId>junit</artifactId>
+                        <version>4.13</version>
                         <scope>test</scope>
                 </dependency>
 
